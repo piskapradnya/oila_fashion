@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/cover7">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Nama Barang"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/Ukuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="SIZE"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/Size1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="XS"
+                    android:fontFamily="@font/architects_daughter"/>
+
+                <CheckBox
+                    android:id="@+id/Size2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="S"
+                    android:fontFamily="@font/architects_daughter"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/Size3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="M"
+                    android:fontFamily="@font/architects_daughter"/>
+
+                <CheckBox
+                    android:id="@+id/Size4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="L"
+                    android:fontFamily="@font/architects_daughter"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/Size5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="XL"
+                    android:fontFamily="@font/architects_daughter"/>
+
+                <CheckBox
+                    android:id="@+id/Size6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="XXL"
+                    android:fontFamily="@font/architects_daughter"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/Color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Warna"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editWarna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Harga Barang"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/Kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Kategori"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/rGroupKategori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioAtasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="@color/black"
+                android:text="Top" />
+
+            <RadioButton
+                android:id="@+id/radioBawahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="@color/black"
+                android:text="Pants" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/jumlahStok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Stok Barang"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/seekbarStock"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/stockSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="15dp"
+            android:text="-"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/btnTampilkan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="@color/nude"
+            android:text="SAVE"
+            android:textColor="@color/black"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

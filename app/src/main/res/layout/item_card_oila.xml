@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:background="@color/nude">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rv_tas"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/re"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_namaBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Nama Barang"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/rv_tas"
+            android:fontFamily="@font/abeezee"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_namaBarang"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Deskripsi"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/rv_tas"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:layout_toRightOf="@id/rv_tas"
+            android:fontFamily="@font/abeezee"/>
+
+        <TextView
+            android:id="@+id/tv_stokTersedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deskripsi"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Stok"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/rv_tas"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:layout_toRightOf="@id/rv_tas"
+            android:fontFamily="@font/abeezee"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
